@@ -1,0 +1,61 @@
+package initializing;
+
+class Mobile {
+	String display;
+	String processor;
+	int batteryInMah;
+
+	Mobile(String display, String processor, int batteryInMah){
+		this.display = display;
+		this.processor = processor;
+		this.batteryInMah = batteryInMah;
+	}
+
+	public static void main(String[] args) {
+		Mobile motorola = new Mobile("LED","Snap Dragon 612",4000);
+		Mobile redmiNote7 = new Mobile("LED","Snap Dragon 601",3000);
+		Mobile poco = new Mobile("Amoled","Snap Dragon 722",5000);
+
+		System.out.println("Motorola Specifications:\n----------------------------\n"
+				+ "Diplay: "+motorola.display
+				+"\nProcessor: "+motorola.processor
+				+"\nBattery in MAH: "+motorola.batteryInMah+"\n\n");
+
+		System.out.println("Redmi note 7 Specifications:\n----------------------------\n"
+				+ "Diplay: "+redmiNote7.display
+				+"\nProcessor: "+redmiNote7.processor
+				+"\nBattery in MAH: "+redmiNote7.batteryInMah+"\n\n");
+
+		System.out.println("Poco Specifications:\n----------------------------\n"
+				+ "Diplay: "+poco.display
+				+"\nProcessor: "+poco.processor
+				+"\nBattery in MAH: "+poco.batteryInMah+"\n\n");
+
+	}
+
+}
+
+
+
+
+Output:
+
+Motorola Specifications:
+----------------------------
+Diplay: LED
+Processor: Snap Dragon 612
+Battery in MAH: 4000
+
+
+Redmi note 7 Specifications:
+----------------------------
+Diplay: LED
+Processor: Snap Dragon 601
+Battery in MAH: 3000
+
+
+Poco Specifications:
+----------------------------
+Diplay: Amoled
+Processor: Snap Dragon 722
+Battery in MAH: 5000
